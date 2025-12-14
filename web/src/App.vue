@@ -21,7 +21,7 @@
   })
 </script>
 <style lang="scss">
-  // 引入初始化样式
+  // 引入初始化样式2
   #app {
     height: 100vh;
     overflow: hidden;
