@@ -20,3 +20,8 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+#Code coverage file
+node_modules/
+dist/
+.env
+.DS_Store
