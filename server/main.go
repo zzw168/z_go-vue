@@ -40,6 +40,10 @@ func main() {
 func initializeSystem() {
 	global.GVA_VP = core.Viper() // 初始化Viper配置管理库
 	initialize.OtherInit()
+	// OtherInit() 启动期初始化函数，
+	// 用于校验 JWT 时间配置、初始化 JWT 黑名单缓存，
+	// 并在未配置的情况下自动从 go.mod 中识别项目的 Go module 名称，
+	// 为后续鉴权与代码生成提供基础环境。
 	global.GVA_LOG = core.Zap() // 初始化zap日志库
 	zap.ReplaceGlobals(global.GVA_LOG)
 	global.GVA_DB = initialize.Gorm() // gorm连接数据库
