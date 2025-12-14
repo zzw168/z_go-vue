@@ -1,6 +1,0 @@
-[server]2025-11-21 15:47:19.080	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/gorm.go:83	register table success
-[server]2025-11-21 15:47:19.083	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:74	register swagger handler
-[server]2025-11-21 15:47:19.135	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:124	router register success
-[server]2025-11-21 15:47:19.136	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
-[server]2025-11-21 18:19:48.384	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:42	收到系统退出信号	{"signal": "terminated"}
-[server]2025-11-21 18:19:48.385	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:50	WEB服务已优雅关闭
