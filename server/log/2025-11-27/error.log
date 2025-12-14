@@ -1,0 +1,4 @@
+[server]2025-11-27 17:34:05.466	[31merror[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/utils/claims.go:52	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
+[server]2025-11-27 17:34:13.556	[31merror[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/utils/claims.go:52	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
+[server]2025-11-27 17:36:09.257	[31merror[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/utils/claims.go:52	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
+[server]2025-11-27 17:36:18.024	[31merror[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/utils/claims.go:52	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构

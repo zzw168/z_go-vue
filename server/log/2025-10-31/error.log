@@ -1,0 +1,2 @@
+[server]2025-10-31 17:14:07.499	[31merror[0m	E:/z_GoProjects/github.com/gin-vue-admin-main/server/api/v1/system/sys_user.go:60	登陆失败! 用户名不存在或者密码错误!	{"error": "db not init"}
+[server]2025-10-31 17:14:18.487	[31merror[0m	E:/z_GoProjects/github.com/gin-vue-admin-main/server/api/v1/system/sys_user.go:60	登陆失败! 用户名不存在或者密码错误!	{"error": "db not init"}

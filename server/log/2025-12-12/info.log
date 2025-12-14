@@ -1,0 +1,4 @@
+[server]2025-12-12 07:59:44.059	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/gorm.go:83	register table success
+[server]2025-12-12 07:59:44.061	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:74	register swagger handler
+[server]2025-12-12 07:59:44.090	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:124	router register success
+[server]2025-12-12 07:59:44.091	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}

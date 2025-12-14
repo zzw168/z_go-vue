@@ -1,0 +1,16 @@
+[server]2025-11-07 10:22:09.592	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/gorm.go:83	register table success
+[server]2025-11-07 10:22:09.594	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:74	register swagger handler
+[server]2025-11-07 10:22:09.621	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:124	router register success
+[server]2025-11-07 10:22:09.621	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-11-07 11:54:26.686	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:42	收到系统退出信号	{"signal": "interrupt"}
+[server]2025-11-07 11:54:26.687	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:50	WEB服务已优雅关闭
+[server]2025-11-07 11:54:33.425	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/gorm.go:83	register table success
+[server]2025-11-07 11:54:33.427	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:74	register swagger handler
+[server]2025-11-07 11:54:33.455	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:124	router register success
+[server]2025-11-07 11:54:33.456	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-11-07 12:00:35.597	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:42	收到系统退出信号	{"signal": "interrupt"}
+[server]2025-11-07 12:00:35.598	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:50	WEB服务已优雅关闭
+[server]2025-11-07 12:00:40.823	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/gorm.go:83	register table success
+[server]2025-11-07 12:00:40.825	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:74	register swagger handler
+[server]2025-11-07 12:00:40.848	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:124	router register success
+[server]2025-11-07 12:00:40.848	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}

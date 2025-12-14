@@ -1,0 +1,28 @@
+[server]2025-12-13 08:26:47.301	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/gorm.go:83	register table success
+[server]2025-12-13 08:26:47.303	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:74	register swagger handler
+[server]2025-12-13 08:26:47.333	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/initialize/router.go:124	router register success
+[server]2025-12-13 08:26:47.334	[34minfo[0m	E:/z_GoProjects/github.com/gin-vue-admin/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-12-13 14:04:08.454	[34minfo[0m	E:/z_GoProjects/github.com/z_go+vue/server/initialize/gorm.go:83	register table success
+[server]2025-12-13 14:04:08.455	[34minfo[0m	E:/z_GoProjects/github.com/z_go+vue/server/initialize/router.go:74	register swagger handler
+[server]2025-12-13 14:04:08.484	[34minfo[0m	E:/z_GoProjects/github.com/z_go+vue/server/initialize/router.go:124	router register success
+[server]2025-12-13 14:04:08.484	[34minfo[0m	E:/z_GoProjects/github.com/z_go+vue/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-12-13 14:39:11.753	[34minfo[0m	E:/z_GoProjects/github.com/z_go+vue/server/core/server_run.go:42	收到系统退出信号	{"signal": "terminated"}
+[server]2025-12-13 14:39:11.755	[34minfo[0m	E:/z_GoProjects/github.com/z_go+vue/server/core/server_run.go:50	WEB服务已优雅关闭
+[server]2025-12-13 16:17:17.076	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/initialize/gorm.go:83	register table success
+[server]2025-12-13 16:17:17.078	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/initialize/router.go:74	register swagger handler
+[server]2025-12-13 16:17:17.102	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/initialize/router.go:124	router register success
+[server]2025-12-13 16:17:17.103	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-12-13 16:48:16.029	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/core/server_run.go:42	收到系统退出信号	{"signal": "interrupt"}
+[server]2025-12-13 16:48:16.030	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/core/server_run.go:50	WEB服务已优雅关闭
+[server]2025-12-13 17:04:54.471	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/initialize/gorm.go:83	register table success
+[server]2025-12-13 17:04:54.472	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/initialize/router.go:75	register swagger handler
+[server]2025-12-13 17:04:54.496	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/initialize/router.go:125	router register success
+[server]2025-12-13 17:04:54.497	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-12-13 17:07:55.668	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/core/server_run.go:42	收到系统退出信号	{"signal": "terminated"}
+[server]2025-12-13 17:07:55.669	[34minfo[0m	E:/z_GoProjects/github.com/z_go-vue/server/core/server_run.go:50	WEB服务已优雅关闭
+[server]2025-12-13 17:44:05.663	[34minfo[0m	E:/z_GoProjects/github.com/z_go1vue/server/initialize/gorm.go:83	register table success
+[server]2025-12-13 17:44:05.664	[34minfo[0m	E:/z_GoProjects/github.com/z_go1vue/server/initialize/router.go:75	register swagger handler
+[server]2025-12-13 17:44:05.709	[34minfo[0m	E:/z_GoProjects/github.com/z_go1vue/server/initialize/router.go:125	router register success
+[server]2025-12-13 17:44:05.710	[34minfo[0m	E:/z_GoProjects/github.com/z_go1vue/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-12-13 17:57:59.203	[34minfo[0m	E:/z_GoProjects/github.com/z_go1vue/server/core/server_run.go:42	收到系统退出信号	{"signal": "terminated"}
+[server]2025-12-13 17:57:59.203	[34minfo[0m	E:/z_GoProjects/github.com/z_go1vue/server/core/server_run.go:50	WEB服务已优雅关闭
