@@ -1,0 +1,15 @@
+{{define "/users/index.tmpl"}}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="static/index.css">
+    <title>{{ .title }}</title>
+</head>
+<body>
+    <h1>Hello Gin</h1>
+    <p>Title: {{ .title }}</p>
+    <a href="{{ .title | safe}}">点我跳转</a>
+    <script src="static/index.js"></script>
+</body>
+</html>
+{{end}}

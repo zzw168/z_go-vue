@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>SSE 测试</title>
+</head>
+<body>
+<h2>Server-Sent Events 实时推送示例</h2>
+
+<div id="log" style="white-space: pre-line; border:1px solid #ccc; padding:10px; width:400px; height:200px; overflow:auto"></div>
+
+<input type="text" id="msg" placeholder="输入消息..." />
+<button onclick="sendMsg()">发送</button>
+
+<script>
+const log = document.getElementById('log');
+
+// 建立 SSE 连接
+const evtSource = new EventSource('/sse');
+evtSource.onmessage = function(event) {
+  log.textContent += event.data + "\n";
+};
+
+// 发送消息到后端
+function sendMsg() {
+  const msg = document.getElementById('msg').value;
+  fetch('/message', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({message: msg})
+  });
+}
+</script>
+</body>
+</html>

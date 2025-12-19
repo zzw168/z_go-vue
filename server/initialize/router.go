@@ -36,8 +36,8 @@ func (fs justFilesFilesystem) Open(name string) (http.File, error) {
 
 func Routers() *gin.Engine {
 	Router := gin.New()
-	Router.Use(gin.Recovery())
-	if gin.Mode() == gin.DebugMode {
+	Router.Use(gin.Recovery())       // 恢复中间件，recover掉panic错误,防止程序直接崩溃
+	if gin.Mode() == gin.DebugMode { // 仅在 Debug 模式启用访问日志
 		Router.Use(gin.Logger())
 	}
 
@@ -45,7 +45,7 @@ func Routers() *gin.Engine {
 
 		sseServer := McpRun()
 
-		// 注册mcp服务
+		// 注册mcp服务，实时通信服务
 		Router.GET(global.GVA_CONFIG.MCP.SSEPath, func(c *gin.Context) {
 			sseServer.SSEHandler().ServeHTTP(c.Writer, c.Request)
 		})

@@ -7,7 +7,7 @@ aliyun-oss:
     base-path: yourBasePath
 autocode:
     web: web/src
-    root: E:\z_GoProjects\github.com\gin-vue-admin
+    root: E:\z_GoProjects\z_go-vue
     server: server
     module: server
     ai-path: ""
@@ -17,7 +17,7 @@ aws-s3:
     endpoint: ""
     secret-id: your-secret-id
     secret-key: your-secret-key
-    base-url: https://gin.vue.admin
+    base-url: https://www.qq.com
     path-prefix: server
     s3-force-path-style: false
     disable-ssl: false
@@ -29,7 +29,7 @@ captcha:
     open-captcha-timeout: 3600
 cloudflare-r2:
     bucket: xxxx0bucket
-    base-url: https://gin.vue.admin.com
+    base-url: https://www.qq.com
     path: uploads
     account-id: xxx_account_id
     access-key-id: xxx_key_id

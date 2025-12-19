@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lan="zh-CN">
+<head>
+    <title>测试嵌套template语法</title>
+</head>
+<body>
+    {{template "ul.tmpl"}}
+    <hr>
+    {{template "ol.tmpl"}}
+<div>你好，{{.}}</div>
+</body>
+</html>
+
+{{define "ol.tmpl"}}
+    <ol>
+        <li>吃饭</li>
+        <li>睡觉</li>
+        <li>打游戏</li>
+    </ol>
+{{end}}
