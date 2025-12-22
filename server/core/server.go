@@ -52,5 +52,5 @@ func RunServer() {
 	// 	** 剔除授权标识需购买商用授权：https://gin-vue-admin.com/empower/index.html **
 	// 	** 感谢您对Gin-Vue-Admin的支持与关注 合法授权使用更有利于项目的长久发展**
 	// `, global.Version, address, address, global.GVA_CONFIG.MCP.SSEPath, address, global.GVA_CONFIG.MCP.MessagePath)
-	initServer(address, Router, 10*time.Minute, 10*time.Minute)
+	initServer(address, Router, 10*time.Minute, 10*time.Minute) // 启动服务并实现优雅关闭
 }
