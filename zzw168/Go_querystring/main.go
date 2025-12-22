@@ -108,6 +108,6 @@ func main() {
 		c.JSON(http.StatusNotFound, gin.H{"msg": "http://www.qq.com"})
 	})
 
-	r.Run()
+	r.Run(":8088")
 
 }

@@ -19,5 +19,5 @@ func main() {
 	dao.InitModel()
 	// dao.DB.AutoMigrate(&models.Todo{})
 	r := routers.SetupRouter()
-	r.Run()
+	r.Run(":8088")
 }
