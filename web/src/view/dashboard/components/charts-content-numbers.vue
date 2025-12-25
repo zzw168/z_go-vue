@@ -55,6 +55,7 @@
     }
   })
   console.log(props.chartsData)
+  console.log(props.xAxis)
   // const xAxis = ref([
   //   '2024-1',
   //   '2024-2',
@@ -203,15 +204,15 @@
       ]
     }
   })
-  watch(
-    () => [props.xAxis, props.chartsData],
-    () => {
-      if (chartInstance) {
-        chartInstance.setOption(option.value)
-      }
-    },
-    { deep: true }
-  )
+  // watch(
+  //   () => [props.xAxis, props.chartsData],
+  //   () => {
+  //     if (chartInstance) {
+  //       chartInstance.setOption(option.value)
+  //     }
+  //   },
+  //   { deep: true }
+  // )
 
 </script>
 

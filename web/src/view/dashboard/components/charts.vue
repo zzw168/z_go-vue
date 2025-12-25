@@ -34,9 +34,10 @@
 </template>
 
 <script setup>
+  import service from '@/utils/request'
   import chartsPeopleNumber from './charts-people-numbers.vue'
   import chartsContentNumber from './charts-content-numbers.vue'
-  import { ref, reactive, computed } from "vue"
+  import { ref, reactive, computed, watch} from "vue"
   const d = defineProps({
     type: {
       type: Number,
@@ -71,21 +72,51 @@
     // [12, 22, 32, 45, 32, 78, 89, 92]
   ]
 
-  const xAxis = reactive([
-    '2024-1',
-    '2024-2',
-    '2024-3',
-    '2024-4',
-    '2024-5',
-    '2024-6',
-    '2024-7',
-    '2024-8',
-    '2024-9',
-    '2024-10',
-    '2024-11',
-    '2024-12'
-  ])
-  const chartsData = reactive([12, 22, 32, 45, 32, 78, 89, 80, 85, 83, 92, 98])
+  
+
+  // const chartsData = ref([])
+
+  const load_Data = () => {
+      return service({
+        url: '/z/List',
+        method: 'get'
+      })
+    }
+
+
+  const chartsData = ref([0])
+  
+  const xAxis = ref([])
+  // const xAxis = ref([
+  //   '2024-1',
+  //   '2024-2',
+  //   '2024-3',
+  //   '2024-4',
+  //   '2024-5',
+  //   '2024-6',
+  //   '2024-7',
+  //   '2024-8',
+  //   '2024-9',
+  //   '2024-10',
+  //   '2024-11',
+  //   '2024-12'
+  // ])
+  // const chartsData1 = ref([12, 22, 32, 45, 32, 78, 89, 80, 85, 83, 92, 98])
+  // console.log(chartsData1)
+  // const chartsData = ref([])
+  
+  watch(
+    () => d.type,
+    async (val) => {
+      if (val === 4) {
+        const ele = await load_Data()
+        chartsData.value = ele.data.map(item => Number(item.title))
+        xAxis.value = ele.data.map(item => item.status)
+        // console.log(chartsData)
+      }
+    },
+    { immediate: true }
+  )
 </script>
 
 <style scoped lang="scss"></style>

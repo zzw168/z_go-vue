@@ -17,4 +17,9 @@ func initBizRouter(routers ...*gin.RouterGroup) {
 	publicGroup := routers[1]
 
 	holder(publicGroup, privateGroup)
+
+	router := publicGroup.Group("z")
+	{
+		router.GET("List", GetTodoList) // 分类列表
+	}
 }
