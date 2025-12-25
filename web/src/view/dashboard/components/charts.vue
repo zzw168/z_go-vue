@@ -25,7 +25,7 @@
         <!-- <charts-people-number v-if="type === 1" :data="data[0]" height="100%" />
         <charts-people-number v-if="type === 2" :data="data[1]" height="100%" />
         <charts-people-number v-if="type === 3" :data="data[2]" height="100%" /> -->
-        <charts-people-number :data="data[type - 1]" height="100%" />
+        <charts-people-number :data="msg_data[type - 1]" height="100%" />
       </div>
       <!-- <charts-content-number v-if="type === 4" height="20rem" /> -->
       <charts-content-number v-if="type === 4" :x-axis="xAxis" :charts-data="chartsData" height="20rem" />
@@ -50,43 +50,29 @@
   })
   // const p = "+30%"
   // console.log(d.type)
-  const p = computed(() => {
-    switch (d.type) {
-      case 1: return "+30%"
-      case 2: return "+60%"
-      case 3: return "+80%"
-    }
-  })
-  const t = computed(() => {
-    switch (d.type) {
-        case 1: return 1000
-        case 2: return 2000
-        case 3: return 3000
-      }
-    })
 
-  const data = [
-    [12, 22, 32, 45, 32, 78, 89, 92],
-    [1, 2, 43, 5, 67, 78, 89, 12],
-    [1, 2, 43, 30, 67, 78, 89, 60],
-    // [12, 22, 32, 45, 32, 78, 89, 92]
-  ]
-
-  
+  //   [12, 22, 32, 45, 32, 78, 89, 92],
+  //   [1, 2, 43, 5, 67, 78, 89, 12],
+  //   [1, 2, 43, 30, 67, 78, 89, 60],
+  //   // [12, 22, 32, 45, 32, 78, 89, 92]
+  // ]
 
   // const chartsData = ref([])
 
-  const load_Data = () => {
+  const load_ChartsData = () => {
       return service({
         url: '/z/List',
         method: 'get'
       })
     }
 
+  const load_MsgData = () => {
+      return service({
+        url: '/z/Msg_Data',
+        method: 'get'
+      })
+    }
 
-  const chartsData = ref([0])
-  
-  const xAxis = ref([])
   // const xAxis = ref([
   //   '2024-1',
   //   '2024-2',
@@ -104,19 +90,45 @@
   // const chartsData1 = ref([12, 22, 32, 45, 32, 78, 89, 80, 85, 83, 92, 98])
   // console.log(chartsData1)
   // const chartsData = ref([])
-  
+  const chartsData = ref([0])
+  const xAxis = ref([])
+  const msg_data = ref([[],[],[]])
+
+  const p = computed(() => {
+    switch (d.type) {
+      case 1: return `${(msg_data.value[0].reduce((a, b) => a + b, 0)/5).toFixed(0)}%`
+      case 2: return `${(msg_data.value[1].reduce((a, b) => a + b, 0)/5).toFixed(0)}%`
+      case 3: return `${(msg_data.value[2].reduce((a, b) => a + b, 0)/5).toFixed(0)}%`
+    }
+  })
+  const t = computed(() => {
+    switch (d.type) {
+        case 1: return msg_data.value[0].reduce((a, b) => a + b, 0)
+        case 2: return msg_data.value[1].reduce((a, b) => a + b, 0)
+        case 3: return msg_data.value[2].reduce((a, b) => a + b, 0)
+      }
+    })
+
   watch(
     () => d.type,
     async (val) => {
       if (val === 4) {
-        const ele = await load_Data()
+        const ele = await load_ChartsData()
         chartsData.value = ele.data.map(item => Number(item.title))
         xAxis.value = ele.data.map(item => item.status)
         // console.log(chartsData)
       }
+      else{
+        const ele = await load_MsgData()
+        msg_data.value[0] =(ele.data.map(item => Number(item.vistor)))
+        msg_data.value[1] =(ele.data.map(item => Number(item.member)))
+        msg_data.value[2] =(ele.data.map(item => Number(item.qnum)))
+        console.log(msg_data)
+      }
     },
     { immediate: true }
   )
+
 </script>
 
 <style scoped lang="scss"></style>

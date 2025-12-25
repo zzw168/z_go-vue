@@ -8,3 +8,27 @@
 [server]2025-12-25 10:27:40.351	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/router.go:75	register swagger handler
 [server]2025-12-25 10:27:40.374	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/router.go:125	router register success
 [server]2025-12-25 10:27:40.375	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-12-25 14:31:20.614	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:42	收到系统退出信号	{"signal": "interrupt"}
+[server]2025-12-25 14:31:20.614	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:50	WEB服务已优雅关闭
+[server]2025-12-25 14:31:27.579	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/gorm.go:83	register table success
+[server]2025-12-25 14:31:27.580	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/router.go:75	register swagger handler
+[server]2025-12-25 14:31:27.604	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/router.go:125	router register success
+[server]2025-12-25 14:31:27.604	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-12-25 14:46:17.437	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:42	收到系统退出信号	{"signal": "interrupt"}
+[server]2025-12-25 14:46:17.438	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:50	WEB服务已优雅关闭
+[server]2025-12-25 14:46:23.681	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/gorm.go:83	register table success
+[server]2025-12-25 14:46:23.683	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/router.go:75	register swagger handler
+[server]2025-12-25 14:46:23.705	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/router.go:125	router register success
+[server]2025-12-25 14:46:23.705	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-12-25 14:48:13.959	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:42	收到系统退出信号	{"signal": "interrupt"}
+[server]2025-12-25 14:48:13.960	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:50	WEB服务已优雅关闭
+[server]2025-12-25 14:48:19.429	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/gorm.go:83	register table success
+[server]2025-12-25 14:48:19.431	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/router.go:75	register swagger handler
+[server]2025-12-25 14:48:19.457	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/router.go:125	router register success
+[server]2025-12-25 14:48:19.457	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}
+[server]2025-12-25 14:50:48.776	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:42	收到系统退出信号	{"signal": "interrupt"}
+[server]2025-12-25 14:50:48.777	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:50	WEB服务已优雅关闭
+[server]2025-12-25 14:51:44.119	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/gorm.go:83	register table success
+[server]2025-12-25 14:51:44.121	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/router.go:75	register swagger handler
+[server]2025-12-25 14:51:44.144	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/initialize/router.go:125	router register success
+[server]2025-12-25 14:51:44.145	[34minfo[0m	E:/z_GoProjects/z_go-vue/server/core/server_run.go:32	启动WEB服务中...	{"addr": ":8888"}

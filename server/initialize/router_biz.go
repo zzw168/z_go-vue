@@ -20,6 +20,7 @@ func initBizRouter(routers ...*gin.RouterGroup) {
 
 	router := publicGroup.Group("z")
 	{
-		router.GET("List", GetTodoList) // 分类列表
+		router.GET("List", GetTodoList)    // 分类列表
+		router.GET("Msg_Data", GetMsgList) // 分类列表
 	}
 }

@@ -9,6 +9,7 @@ func bizModel() error {
 	db := global.GVA_DB
 	err := db.AutoMigrate(
 		model.Todo{},
+		model.Msg_Data{},
 	)
 	if err != nil {
 		return err
